@@ -1,6 +1,9 @@
 import { useState } from "react";
 import FacebookButton from "./components/facebook-button";
 import FacebookModal from "./components/facebook-modal";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize(import.meta.env.VITE_GA_ID);
 
 export default function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
